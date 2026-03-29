@@ -26,44 +26,23 @@
 
 /* ===== THEME TOGGLE ===== */
 .theme-toggle {
-  position: relative;
-  width: 52px;
-  height: 28px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  cursor: pointer;
-  transition: background .3s, border-color .3s;
-  flex-shrink: 0;
-  overflow: hidden;
+  position: relative; width: 52px; height: 28px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; cursor: pointer;
+  transition: background .3s, border-color .3s; flex-shrink: 0; overflow: hidden;
 }
 .theme-toggle:hover { border-color: var(--accent); }
 .theme-toggle input { display: none; }
 .theme-toggle-track {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 7px;
-  font-size: 11px;
-  pointer-events: none;
+  position: absolute; inset: 0; display: flex; align-items: center;
+  justify-content: space-between; padding: 0 7px; font-size: 11px; pointer-events: none;
 }
 .theme-toggle-thumb {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 20px;
-  height: 20px;
-  background: var(--accent);
-  border-radius: 50%;
+  position: absolute; top: 3px; left: 3px; width: 20px; height: 20px;
+  background: var(--accent); border-radius: 50%;
   transition: transform .35s cubic-bezier(.4,0,.2,1), background .3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  pointer-events: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; pointer-events: none; box-shadow: 0 2px 6px rgba(0,0,0,.35);
 }
 [data-theme="light"] .theme-toggle-thumb { transform: translateX(24px); }
 [data-theme="dark"]  .theme-toggle-thumb::before { content: '🌙'; }
@@ -225,8 +204,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:2000;height:64px;display:flex;al
 .product-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:var(--text);line-height:1.2;margin-bottom:7px;transition:color .3s;}
 .product-specs{font-size:11px;color:var(--text2);margin-bottom:12px;line-height:1.5;flex:1;transition:color .3s;}
 .product-footer{display:flex;align-items:flex-end;justify-content:space-between;}
-.product-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--text);transition:color .3s;}
-.product-price-old{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:var(--text2);text-decoration:line-through;margin-right:6px;transition:color .3s;}
+.product-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;color:var(--text);transition:color .3s;}
+.product-price-old{font-family:'Barlow Condensed',sans-serif;font-size:12px;color:var(--text2);text-decoration:line-through;margin-right:6px;transition:color .3s;}
 .product-rating{display:flex;align-items:center;gap:3px;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text2);transition:color .3s;}
 .stars{color:#fbbf24;font-size:11px;}
 .stock-indicator{display:inline-flex;align-items:center;gap:5px;font-family:'Share Tech Mono',monospace;font-size:10px;margin-top:6px;}
@@ -282,7 +261,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:2000;height:64px;display:flex;al
 .cart-item-info{flex:1;}
 .cart-item-brand{font-family:'Share Tech Mono',monospace;font-size:9px;color:var(--accent);letter-spacing:2px;transition:color .3s;}
 .cart-item-name{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:var(--text);line-height:1.2;margin:3px 0;transition:color .3s;}
-.cart-item-price{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:900;color:var(--accent);transition:color .3s;}
+.cart-item-price{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:900;color:var(--accent);transition:color .3s;}
 .cart-item-qty{display:flex;align-items:center;gap:10px;margin-top:8px;}
 .qty-btn{background:var(--surface);border:1px solid var(--border);color:var(--text);width:24px;height:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:border-color .2s,background .3s,color .3s;border-radius:2px;}
 .qty-btn:hover{border-color:var(--accent);}
@@ -295,7 +274,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:2000;height:64px;display:flex;al
 .cart-footer{padding:20px 24px;border-top:1px solid var(--border);transition:border-color .3s;}
 .cart-subtotal{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
 .cart-subtotal-label{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text2);letter-spacing:2px;text-transform:uppercase;transition:color .3s;}
-.cart-subtotal-price{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:var(--text);transition:color .3s;}
+.cart-subtotal-price{font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:var(--text);transition:color .3s;}
 .cart-shipping{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:1px;margin-bottom:14px;}
 .cart-checkout{width:100%;padding:14px;background:var(--accent);color:var(--bg);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;border:none;cursor:pointer;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:filter .2s,background .3s,color .3s;}
 .cart-checkout:hover{filter:brightness(1.1);}
@@ -324,7 +303,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:2000;height:64px;display:flex;al
 .filter-option:hover label{color:var(--text);}
 .filter-count{font-family:'Share Tech Mono',monospace;font-size:9px;color:var(--text2);transition:color .3s;}
 .price-inputs{display:flex;align-items:center;gap:8px;margin-top:8px;}
-.price-inputs input{background:var(--bg);border:1px solid var(--border);color:var(--text);padding:6px 10px;font-size:12px;width:80px;outline:none;font-family:'Barlow Condensed',sans-serif;cursor:text;transition:border-color .2s,background .3s,color .3s;border-radius:2px;}
+.price-inputs input{background:var(--bg);border:1px solid var(--border);color:var(--text);padding:6px 10px;font-size:12px;width:100px;outline:none;font-family:'Barlow Condensed',sans-serif;cursor:text;transition:border-color .2s,background .3s,color .3s;border-radius:2px;}
 .price-inputs input:focus{border-color:var(--accent);}
 .price-inputs span{color:var(--text2);font-size:12px;transition:color .3s;}
 .catalog-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--border);transition:border-color .3s;}
@@ -352,8 +331,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:2000;height:64px;display:flex;al
 .modal-brand{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;transition:color .3s;}
 .modal-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:26px;color:var(--text);line-height:1.1;margin-bottom:10px;transition:color .3s;}
 .modal-rating{display:flex;align-items:center;gap:8px;margin-bottom:14px;}
-.modal-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:34px;color:var(--text);margin-bottom:4px;transition:color .3s;}
-.modal-price-old{font-family:'Barlow Condensed',sans-serif;font-size:16px;color:var(--text2);text-decoration:line-through;margin-right:10px;transition:color .3s;}
+.modal-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:var(--text);margin-bottom:4px;transition:color .3s;}
+.modal-price-old{font-family:'Barlow Condensed',sans-serif;font-size:15px;color:var(--text2);text-decoration:line-through;margin-right:10px;transition:color .3s;}
 .modal-specs{margin:14px 0 20px;}
 .spec-row{display:flex;border-bottom:1px solid var(--border);padding:7px 0;transition:border-color .3s;}
 .spec-row:first-child{border-top:1px solid var(--border);}
@@ -375,7 +354,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:2000;height:64px;display:flex;al
 .checkout-summary{background:var(--surface);border:1px solid var(--border);padding:14px;margin:16px 0;transition:background .3s,border-color .3s;}
 .checkout-summary-title{font-family:'Share Tech Mono',monospace;font-size:9px;color:var(--text2);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;transition:color .3s;}
 .checkout-line{display:flex;justify-content:space-between;font-size:13px;color:var(--text2);margin-bottom:5px;transition:color .3s;}
-.checkout-line.total{border-top:1px solid var(--border);padding-top:9px;margin-top:5px;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;transition:border-color .3s,color .3s;}
+.checkout-line.total{border-top:1px solid var(--border);padding-top:9px;margin-top:5px;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;transition:border-color .3s,color .3s;}
 .checkout-submit{width:100%;padding:14px;background:var(--accent);color:var(--bg);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;border:none;cursor:pointer;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:filter .2s,background .3s,color .3s;}
 .checkout-submit:hover{filter:brightness(1.1);}
 .success-screen{text-align:center;padding:52px 32px;}
@@ -515,12 +494,9 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
    RESPONSIVE — MOBILE (≤768px)
    ===================================================== */
 @media (max-width: 768px) {
-  /* Désactiver curseur custom */
   .cursor, .cursor-ring { display: none !important; }
   body { cursor: auto; }
   * { cursor: auto !important; }
-
-  /* NAV */
   nav                  { padding: 0 16px; height: 60px; }
   .nav-links           { display: none; }
   .nav-search-wrap     { display: none; }
@@ -530,75 +506,51 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
   .cart-btn            { padding: 7px 12px; font-size: 12px; gap: 6px; }
   .nav-logo            { font-size: 20px; letter-spacing: 2px; }
   .page                { padding-top: 60px; }
-
-  /* HERO */
   .hero                { padding: 36px 16px 60px; min-height: calc(100vh - 60px); flex-direction: column; justify-content: center; }
   .hero-bg-img         { opacity: 0.4; }
   .hero h1             { font-size: clamp(38px, 11vw, 64px); }
   .hero-desc           { font-size: 13px; max-width: 100%; }
   .hero-ctas           { flex-direction: column; gap: 10px; }
-  .hero-ctas .btn-primary,
-  .hero-ctas .btn-secondary { width: 100%; text-align: center; padding: 14px; clip-path: none; border-radius: 3px; }
+  .hero-ctas .btn-primary,.hero-ctas .btn-secondary { width: 100%; text-align: center; padding: 14px; clip-path: none; border-radius: 3px; }
   .hero-stats          { position: static; margin-top: 36px; gap: 0; flex-wrap: nowrap; justify-content: space-between; width: 100%; }
   .stat                { flex: 1; text-align: center; border-left: 1px solid var(--border); padding-left: 0; }
   .stat:first-child    { border-left: none; }
   .stat-num            { font-size: 24px; }
   .stat-label          { font-size: 9px; }
   .hero-badge          { font-size: 9px; padding: 4px 10px; }
-
-  /* TICKER */
   .ticker-item         { font-size: 11px; padding: 0 18px; }
-
-  /* SECTIONS */
   .section             { padding: 44px 16px; }
   .section-title       { font-size: 30px; }
   .section-header      { flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 28px; }
-
-  /* CATÉGORIES */
   .cats-grid           { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .cat-card            { padding: 18px 10px; }
   .cat-icon            { font-size: 26px; margin-bottom: 6px; }
   .cat-name            { font-size: 10px; }
   .cat-count           { font-size: 9px; }
-
-  /* PRODUITS */
   .products-grid       { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .product-img-wrap    { height: 150px; }
   .product-quick-add   { transform: translateY(0); font-size: 11px; padding: 9px; letter-spacing: 1px; }
   .product-name        { font-size: 13px; }
-  .product-price       { font-size: 18px; }
+  .product-price       { font-size: 14px; }
   .product-specs       { display: none; }
-
-  /* PROMO */
   .promo-grid          { grid-template-columns: 1fr; gap: 12px; }
   .promo-card          { padding: 28px 20px; }
   .promo-title         { font-size: 30px; }
   .promo-emoji         { font-size: 55px; right: 16px; }
   .promo-desc          { max-width: 65%; font-size: 12px; }
-
-  /* MONTAGE */
   .montage-grid        { grid-template-columns: 1fr; gap: 20px; }
-  .montage-form,
-  .montage-contacts    { padding: 20px 16px; }
-
-  /* BRANDS */
+  .montage-form,.montage-contacts { padding: 20px 16px; }
   .brands-grid         { grid-template-columns: repeat(4, 1fr); }
   .brand-item          { padding: 18px 10px; }
   .brand-name          { font-size: 12px; letter-spacing: 1px; }
-
-  /* FEATURES */
   .features-grid       { grid-template-columns: 1fr 1fr; }
   .feature-item        { padding: 24px 16px; }
   .feature-title       { font-size: 15px; }
   .feature-desc        { font-size: 11px; }
-
-  /* FOOTER */
   .footer-grid         { grid-template-columns: 1fr; gap: 24px; }
   footer               { padding: 36px 16px 20px; }
   .footer-bottom       { flex-direction: column; gap: 14px; text-align: center; }
   .footer-pays         { flex-wrap: wrap; justify-content: center; }
-
-  /* CATALOG */
   .catalog-hero        { padding: 24px 16px 16px; }
   .catalog-hero h1     { font-size: 34px; }
   .catalog-layout      { grid-template-columns: 1fr; padding: 12px 16px 40px; }
@@ -609,11 +561,7 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
   .catalog-toolbar     { flex-direction: column; align-items: flex-start; gap: 10px; }
   .catalog-sort        { width: 100%; justify-content: space-between; }
   .catalog-sort select { flex: 1; }
-
-  /* CART */
   .cart-sidebar        { width: 100%; max-width: 100%; }
-
-  /* MODALS */
   .modal-overlay       { padding: 8px; align-items: flex-end; }
   .product-modal       { max-height: 95vh; border-radius: 8px 8px 0 0; }
   .modal-inner         { grid-template-columns: 1fr; }
@@ -621,14 +569,12 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
   .modal-img-area img  { max-height: 160px; }
   .modal-info          { padding: 20px 16px; }
   .modal-name          { font-size: 20px; }
-  .modal-price         { font-size: 28px; }
+  .modal-price         { font-size: 22px; }
   .checkout-modal      { padding: 24px 16px; border-radius: 8px 8px 0 0; }
   .form-grid           { grid-template-columns: 1fr; }
   .contact-modal-box   { padding: 24px 16px; max-width: 100%; border-radius: 8px 8px 0 0; }
   .contact-modal-title { font-size: 24px; }
   .contact-modal-info-value { font-size: 17px; }
-
-  /* BLOG */
   .blog-hero           { padding: 28px 16px 18px; }
   .blog-hero h1        { font-size: 36px; }
   .blog-filters        { padding: 12px 16px; }
@@ -638,8 +584,6 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
   .blog-card.featured .blog-card-img { width: 100%; height: 160px; font-size: 60px; }
   .blog-card.featured .blog-card-title { font-size: 18px; }
   .blog-sidebar        { position: static; }
-
-  /* ARTICLE MODAL */
   .article-modal       { max-height: 95vh; border-radius: 8px 8px 0 0; }
   .article-modal-img   { height: 140px; font-size: 60px; }
   .article-modal-body  { padding: 20px 16px 32px; }
@@ -647,9 +591,6 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
   .article-meta        { flex-wrap: wrap; gap: 8px; }
 }
 
-/* =====================================================
-   TRÈS PETIT MOBILE (≤420px)
-   ===================================================== */
 @media (max-width: 420px) {
   .products-grid       { grid-template-columns: 1fr; }
   .cats-grid           { grid-template-columns: repeat(2, 1fr); }
@@ -678,7 +619,7 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
   </div>
   <div class="cart-items" id="cartItems"></div>
   <div class="cart-footer" id="cartFooter" style="display:none">
-    <div class="cart-subtotal"><div class="cart-subtotal-label">Total</div><div class="cart-subtotal-price" id="cartTotal">0€</div></div>
+    <div class="cart-subtotal"><div class="cart-subtotal-label">Total</div><div class="cart-subtotal-price" id="cartTotal">0 FCFA</div></div>
     <div class="cart-shipping" id="cartShipping"></div>
     <button class="cart-checkout" onclick="openCheckout()">COMMANDER MAINTENANT →</button>
     <button class="cart-continue" onclick="closeCart()">CONTINUER LES ACHATS</button>
@@ -866,15 +807,15 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
 
   <div class="ticker"><div class="ticker-track">
     <span class="ticker-item">🔥 RTX 5080 — 15% DE RÉDUCTION <span class="ticker-sep">///</span></span>
-    <span class="ticker-item">⚡ LIVRAISON GRATUITE DÈS 99€ <span class="ticker-sep">///</span></span>
+    <span class="ticker-item">⚡ LIVRAISON GRATUITE DÈS 65 000 FCFA <span class="ticker-sep">///</span></span>
     <span class="ticker-item">🆕 AMD RYZEN 9 9950X EN STOCK <span class="ticker-sep">///</span></span>
     <span class="ticker-item">🖥️ SOLDES MONITEURS -30% <span class="ticker-sep">///</span></span>
-    <span class="ticker-item">💾 DDR5 64Go CORSAIR 169€ <span class="ticker-sep">///</span></span>
+    <span class="ticker-item">💾 DDR5 64Go CORSAIR 111 000 FCFA <span class="ticker-sep">///</span></span>
     <span class="ticker-item">🔥 RTX 5080 — 15% DE RÉDUCTION <span class="ticker-sep">///</span></span>
-    <span class="ticker-item">⚡ LIVRAISON GRATUITE DÈS 99€ <span class="ticker-sep">///</span></span>
+    <span class="ticker-item">⚡ LIVRAISON GRATUITE DÈS 65 000 FCFA <span class="ticker-sep">///</span></span>
     <span class="ticker-item">🆕 AMD RYZEN 9 9950X EN STOCK <span class="ticker-sep">///</span></span>
     <span class="ticker-item">🖥️ SOLDES MONITEURS -30% <span class="ticker-sep">///</span></span>
-    <span class="ticker-item">💾 DDR5 64Go CORSAIR 169€ <span class="ticker-sep">///</span></span>
+    <span class="ticker-item">💾 DDR5 64Go CORSAIR 111 000 FCFA <span class="ticker-sep">///</span></span>
   </div></div>
 
   <section class="section">
@@ -900,7 +841,7 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
 
   <section class="section" id="promo">
     <div class="promo-grid reveal">
-      <div class="promo-card promo-card-1" onclick="showPage('catalog')"><div class="promo-tag">// OFFRE LIMITÉE</div><div class="promo-title">BUNDLES<br>PC GAMER</div><div class="promo-desc">Économisez jusqu'à 200€ sur les packs composants sélectionnés.</div><button class="btn-primary">VOIR LES BUNDLES</button><div class="promo-emoji">🎮</div></div>
+      <div class="promo-card promo-card-1" onclick="showPage('catalog')"><div class="promo-tag">// OFFRE LIMITÉE</div><div class="promo-title">BUNDLES<br>PC GAMER</div><div class="promo-desc">Économisez jusqu'à 130 000 FCFA sur les packs composants sélectionnés.</div><button class="btn-primary">VOIR LES BUNDLES</button><div class="promo-emoji">🎮</div></div>
       <div class="promo-card promo-card-2" onclick="showPage('catalog')"><div class="promo-tag">// CRÉATEUR</div><div class="promo-title">WORKSTATION<br>PRO</div><div class="promo-desc">Station haute perf pour la création de contenu, rendu 3D et montage vidéo.</div><button class="btn-primary" style="background:var(--accent3)">EXPLORER</button><div class="promo-emoji">🖥️</div></div>
     </div>
   </section>
@@ -915,7 +856,7 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
             <div class="form-group"><label for="m-name">Votre Nom</label><input type="text" id="m-name" placeholder="Ex: Jean Dupont" required></div>
             <div class="form-group"><label for="m-email">Votre Email</label><input type="email" id="m-email" placeholder="Ex: jean.dupont@mail.com" required></div>
             <div class="form-group"><label for="m-phone">Votre Téléphone</label><input type="tel" id="m-phone" placeholder="Ex: 06 12 34 56 78" required></div>
-            <div class="form-group"><label for="m-budget">Votre Budget (€)</label><input type="number" id="m-budget" placeholder="Ex: 1500" required></div>
+            <div class="form-group"><label for="m-budget">Votre Budget (FCFA)</label><input type="number" id="m-budget" placeholder="Ex: 1 000 000" required></div>
             <div class="form-group"><label for="m-components">Composants Préférés</label><textarea id="m-components" rows="4" placeholder="Ex: RTX 5080, Ryzen 9, 32Go RAM..."></textarea></div>
             <div class="form-group"><label for="m-help">Besoin d'aide pour le choix ?</label><select id="m-help"><option value="Non, j'ai déjà ma liste">Non, j'ai déjà ma liste</option><option value="Oui, conseillez-moi selon mon budget">Oui, conseillez-moi selon mon budget</option><option value="Partiellement, j'hésite sur certains points">Partiellement, j'hésite sur certains points</option></select></div>
             <div class="form-group"><label for="m-info">Informations supplémentaires</label><textarea id="m-info" rows="4" placeholder="Ex: PC pour montage vidéo, boîtier silencieux, RGB obligatoire..."></textarea></div>
@@ -954,7 +895,7 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
 
   <section class="section" style="background:var(--bg2);padding-top:0;">
     <div class="features-grid reveal">
-      <div class="feature-item"><div class="feature-icon">🚀</div><div class="feature-title">Livraison Express</div><div class="feature-desc">Expédition sous 24h. Livraison offerte dès 99€. Suivi en temps réel.</div></div>
+      <div class="feature-item"><div class="feature-icon">🚀</div><div class="feature-title">Livraison Express</div><div class="feature-desc">Expédition sous 24h. Livraison offerte dès 65 000 FCFA. Suivi en temps réel.</div></div>
       <div class="feature-item"><div class="feature-icon">🛡️</div><div class="feature-title">Garantie Étendue</div><div class="feature-desc">Tous nos produits garantis 2 ans minimum. Extension jusqu'à 5 ans.</div></div>
       <div class="feature-item"><div class="feature-icon">🔧</div><div class="feature-title">Support Expert</div><div class="feature-desc">Équipe technique disponible 7j/7 pour vos choix et configurations.</div></div>
       <div class="feature-item"><div class="feature-icon">↩️</div><div class="feature-title">Retour 30 Jours</div><div class="feature-desc">Retour gratuit sous 30 jours. Remboursement ou échange rapide.</div></div>
@@ -968,7 +909,7 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
       <div><div class="footer-col-title">Informations</div><ul class="footer-links"><li><a href="#">À propos</a></li><li><a href="#">Livraison & Retours</a></li><li><a href="#">Garantie</a></li><li><a href="#">Mentions légales</a></li><li><a href="#">CGV</a></li></ul></div>
       <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:nathanowanga290@gmail.com">📧 nathanowanga290@gmail.com</a></li><li><a href="tel:+241076545956">📞 +241 076 545 956</a></li><li><a href="#">📍 Libreville, GABON</a></li><li><a href="#">FAQ</a></li><li><a href="https://wa.me/241076545956" target="_blank">💬 WhatsApp</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><div class="footer-copy">© 2025 GABHARDWARE — TOUS DROITS RÉSERVÉS</div><div class="footer-pays"><span class="pay-badge">VISA</span><span class="pay-badge">MASTERCARD</span><span class="pay-badge">PAYPAL</span><span class="pay-badge">ALMA</span><span class="pay-badge">VIREMENT</span></div></div>
+    <div class="footer-bottom"><div class="footer-copy">© 2025 GABHARDWARE — TOUS DROITS RÉSERVÉS</div><div class="footer-pays"><span class="pay-badge">AIRTEL MONEY</span><span class="pay-badge">MOOV MONEY</span><span class="pay-badge">VISA</span><span class="pay-badge">VIREMENT</span></div></div>
   </footer>
 </div>
 
@@ -1007,11 +948,11 @@ footer{background:var(--bg3);border-top:1px solid var(--border);padding:60px 32p
         <div class="filter-option"><input type="checkbox" id="b-bequiet" onchange="applyFilters()"><label for="b-bequiet">be quiet!</label></div>
       </div>
       <div class="filter-section">
-        <div class="filter-title">Prix (€)</div>
+        <div class="filter-title">Prix (FCFA)</div>
         <div class="price-inputs">
           <input type="number" id="pMin" value="0" placeholder="Min" onchange="applyFilters()">
           <span>—</span>
-          <input type="number" id="pMax" value="9999" placeholder="Max" onchange="applyFilters()">
+          <input type="number" id="pMax" value="9999999" placeholder="Max" onchange="applyFilters()">
         </div>
       </div>
       <div class="filter-section">
@@ -1106,81 +1047,244 @@ function toggleMobileFilters(){const sb=document.getElementById('catalogSidebar'
 function applyResponsive(){const m=window.innerWidth<=768;const fb=document.querySelector('.mobile-filter-btn');if(fb)fb.style.display=m?'flex':'none';const cl=document.querySelector('.cart-label-full');if(cl)cl.style.display=m?'none':'inline';}
 window.addEventListener('resize',applyResponsive);
 
-// ===== PRODUCTS DATA =====
+// ===== PRICE FORMATTER (FCFA) =====
+// 1 EUR = 655.957 FCFA (taux fixe XAF)
+function fcfa(amount){return amount.toLocaleString('fr-FR')+' FCFA';}
+
+// ===== PRODUCTS DATA (prix en FCFA) =====
 const P = [
-  {id:1,cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 5090 32GB GDDR7',short:'32Go GDDR7 · PCIe 5.0 · 575W · DLSS 4',price:1999,old:null,badge:'new',stock:'in',rating:4.9,rev:312,img:'5090.png',specs:[['Mémoire','32 Go GDDR7'],['Interface','PCIe 5.0 x16'],['TDP','575W'],['Connecteurs','4x PCIe 16-pin'],['Sorties','3x DP 2.1, 1x HDMI 2.1'],['DLSS','4.0 Frame Generation']]},
-  {id:2,cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 5080 16GB GDDR7',short:'16Go GDDR7 · PCIe 5.0 · 320W · DLSS 4',price:1199,old:1429,badge:'promo',stock:'in',rating:4.8,rev:287,img:'5080.png',specs:[['Mémoire','16 Go GDDR7'],['Interface','PCIe 5.0 x16'],['TDP','320W'],['Sorties','3x DP 2.1, 1x HDMI 2.1'],['Perf','4K Ultra']]},
-  {id:3,cat:'GPU',brand:'AMD',name:'Radeon RX 9070 XT 16GB',short:'16Go GDDR6 · PCIe 5.0 · 304W · FSR 4',price:699,old:null,badge:'new',stock:'in',rating:4.7,rev:198,img:'9070xt.png',specs:[['Mémoire','16 Go GDDR6'],['Interface','PCIe 5.0 x16'],['TDP','304W'],['Technologie','AMD FSR 4'],['Sorties','2x DP 2.1, 2x HDMI 2.1']]},
-  {id:4,cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 4070 Super 12GB',short:'12Go GDDR6X · PCIe 4.0 · 220W · 1440p',price:569,old:649,badge:'promo',stock:'in',rating:4.8,rev:445,img:'super.png',specs:[['Mémoire','12 Go GDDR6X'],['Interface','PCIe 4.0 x16'],['TDP','220W'],['Idéal','1440p Ultra']]},
-  {id:5,cat:'GPU',brand:'AMD',name:'Radeon RX 7900 XTX 24GB',short:'24Go GDDR6 · PCIe 4.0 · 355W · 4K',price:849,old:999,badge:'promo',stock:'low',rating:4.6,rev:223,img:'xtx.png',specs:[['Mémoire','24 Go GDDR6'],['Interface','PCIe 4.0 x16'],['TDP','355W'],['Idéal','4K Ultra']]},
-  {id:6,cat:'CPU',brand:'AMD',name:'Ryzen 9 9950X 16 Cœurs',short:'16C/32T · 5.7 GHz Boost · AM5 · 170W',price:629,old:769,badge:'promo',stock:'in',rating:4.9,rev:534,img:'r9.png',specs:[['Cœurs/Threads','16C / 32T'],['Fréquence Boost','5.7 GHz'],['Cache L3','64 Mo'],['Socket','AM5'],['TDP','170W'],['Mémoire','DDR5-5600']]},
-  {id:7,cat:'CPU',brand:'Intel',name:'Core Ultra 9 285K 24 Cœurs',short:'24C/24T · 5.7 GHz · LGA1851 · 125W',price:589,old:null,badge:'new',stock:'in',rating:4.8,rev:312,img:'core.png',specs:[['Cœurs','24 (8P+16E)'],['Fréquence Boost','5.7 GHz'],['Cache L3','36 Mo'],['Socket','LGA1851'],['TDP','125W'],['Mémoire','DDR5-6400']]},
-  {id:8,cat:'CPU',brand:'AMD',name:'Ryzen 7 9700X 8 Cœurs',short:'8C/16T · 5.5 GHz · AM5 · 65W',price:329,old:null,badge:null,stock:'in',rating:4.7,rev:678,img:'r7.png',specs:[['Cœurs/Threads','8C / 16T'],['Fréquence Boost','5.5 GHz'],['Cache L3','32 Mo'],['Socket','AM5'],['TDP','65W']]},
-  {id:9,cat:'CPU',brand:'Intel',name:'Core i5-14600K 14 Cœurs',short:'14C/20T · 5.3 GHz · LGA1700 · 125W',price:279,old:329,badge:'promo',stock:'in',rating:4.8,rev:892,img:'i5.png',specs:[['Cœurs','14 (6P+8E)'],['Fréquence Boost','5.3 GHz'],['Cache L3','24 Mo'],['Socket','LGA1700'],['TDP','125W']]},
-  {id:10,cat:'CPU',brand:'AMD',name:'Ryzen 5 7600X 6 Cœurs',short:'6C/12T · 5.3 GHz · AM5 · 105W',price:189,old:249,badge:'promo',stock:'in',rating:4.6,rev:1024,img:'r5.png',specs:[['Cœurs/Threads','6C / 12T'],['Fréquence Boost','5.3 GHz'],['Socket','AM5'],['TDP','105W']]},
-  {id:11,cat:'CPU',brand:'Intel',name:'Core Ultra 5 245K 14 Cœurs',short:'14C · 5.2 GHz · LGA1851 · 125W',price:319,old:null,badge:'new',stock:'in',rating:4.5,rev:156,img:'i5.png',specs:[['Cœurs','14 (6P+8E)'],['Fréquence Boost','5.2 GHz'],['Socket','LGA1851'],['TDP','125W']]},
-  {id:12,cat:'MB',brand:'ASUS',name:'ROG Maximus Z890 Hero WiFi',short:'Intel Z890 · DDR5 · PCIe 5.0 · WiFi 7',price:599,old:null,badge:'new',stock:'in',rating:4.7,rev:89,img:'mb1.png',specs:[['Chipset','Intel Z890'],['Format','ATX'],['Slots DDR5','4x (max 192Go)'],['PCIe 5.0','2x x16'],['WiFi','WiFi 7 (BE)'],['USB','4x USB 3.2 Gen 2x2']]},
-  {id:13,cat:'MB',brand:'MSI',name:'MEG X870E ACE WiFi 7',short:'AMD X870E · DDR5 · PCIe 5.0 · WiFi 7',price:499,old:null,badge:'new',stock:'in',rating:4.8,rev:124,img:'mb2.png',specs:[['Chipset','AMD X870E'],['Format','E-ATX'],['Slots DDR5','4x (max 256Go)'],['WiFi','WiFi 7 (BE)'],['Phases VRM','22+2+2']]},
-  {id:14,cat:'MB',brand:'ASUS',name:'PRIME B650-PLUS DDR5',short:'AMD B650 · DDR5 · PCIe 4.0 · M.2 x4',price:189,old:219,badge:'promo',stock:'in',rating:4.5,rev:342,img:'mb3.png',specs:[['Chipset','AMD B650'],['Format','ATX'],['Slots DDR5','4x (max 128Go)'],['M.2','4x NVMe PCIe 4.0']]},
-  {id:15,cat:'RAM',brand:'Corsair',name:'Vengeance DDR5 64Go 6400MHz',short:'2x32Go · CL32 · XMP 3.0 · RGB',price:169,old:219,badge:'promo',stock:'in',rating:4.6,rev:567,img:'ram1.png',specs:[['Capacité','2x 32 Go'],['Fréquence','6400 MHz'],['Latence','CL32-39-39-76'],['Voltage','1.4V'],['Profil','XMP 3.0'],['RGB','Oui']]},
-  {id:16,cat:'RAM',brand:'G.Skill',name:'Trident Z5 RGB 32Go 7200MHz',short:'2x16Go · CL34 · XMP 3.0 · RGB',price:139,old:null,badge:'top',stock:'in',rating:4.9,rev:423,img:'ram2.png',specs:[['Capacité','2x 16 Go'],['Fréquence','7200 MHz'],['Latence','CL34'],['Profil','XMP 3.0 / EXPO'],['RGB','Oui']]},
-  {id:17,cat:'RAM',brand:'Kingston',name:'Fury Beast DDR5 32Go 5600MHz',short:'2x16Go · CL36 · DDR5-5600 · Expo',price:79,old:99,badge:'promo',stock:'in',rating:4.4,rev:789,img:'ddr4.png',specs:[['Capacité','2x 16 Go'],['Fréquence','5600 MHz'],['Latence','CL36'],['Profil','EXPO / XMP']]},
-  {id:18,cat:'SSD',brand:'Samsung',name:'990 Pro NVMe 2To M.2',short:'7 450 Mo/s lect · PCIe 4.0 · 1200 TBW',price:149,old:null,badge:'top',stock:'in',rating:4.9,rev:1247,img:'990.png',specs:[['Capacité','2 To'],['Interface','PCIe 4.0 x4 NVMe'],['Lecture','7 450 Mo/s'],['Écriture','6 900 Mo/s'],['Endurance','1 200 TBW'],['Format','M.2 2280']]},
-  {id:19,cat:'SSD',brand:'WD',name:'Black SN850X 4To NVMe',short:'7 300 Mo/s · PCIe 4.0 · Gaming',price:289,old:349,badge:'promo',stock:'in',rating:4.8,rev:567,img:'ssd1.png',specs:[['Capacité','4 To'],['Lecture','7 300 Mo/s'],['Écriture','6 600 Mo/s'],['Interface','PCIe 4.0 x4']]},
-  {id:20,cat:'SSD',brand:'Crucial',name:'T700 2To PCIe 5.0 NVMe',short:'12 400 Mo/s · PCIe 5.0 · Dissipateur',price:219,old:null,badge:'new',stock:'in',rating:4.7,rev:234,img:'ssd2.png',specs:[['Capacité','2 To'],['Interface','PCIe 5.0 x4 NVMe'],['Lecture','12 400 Mo/s'],['Écriture','11 800 Mo/s'],['Format','M.2 + dissipateur']]},
-  {id:21,cat:'SSD',brand:'Samsung',name:'870 EVO 4To SATA',short:'560 Mo/s · SATA III · Grand stockage',price:229,old:279,badge:null,stock:'in',rating:4.7,rev:2341,img:'hdd.png',specs:[['Capacité','4 To'],['Interface','SATA III'],['Lecture','560 Mo/s'],['Écriture','530 Mo/s']]},
-  {id:22,cat:'PSU',brand:'be quiet!',name:'Dark Power 13 1000W Titanium',short:'1000W · 80+ Titanium · Modulaire',price:229,old:null,badge:'top',stock:'in',rating:4.9,rev:445,img:'alim1.png',specs:[['Puissance','1 000 W'],['Certification','80+ Titanium'],['Câbles','Modulaire'],['Ventilateur','135mm'],['Connecteurs GPU','2x 12V-2x6'],['Garantie','10 ans']]},
-  {id:23,cat:'PSU',brand:'Corsair',name:'RM1000x SHIFT 1000W Gold',short:'1000W · 80+ Gold · Side-Connect',price:179,old:209,badge:'promo',stock:'in',rating:4.7,rev:312,img:'alim2.png',specs:[['Puissance','1 000 W'],['Certification','80+ Gold'],['Innovation','Connecteurs latéraux'],['Garantie','7 ans']]},
-  {id:24,cat:'COOL',brand:'Corsair',name:'iCUE H150i RGB Elite 360mm',short:'AIO 360mm · Triple 120mm ARGB · LCD',price:199,old:null,badge:null,stock:'low',rating:4.6,rev:678,img:'cf.png',specs:[['Type','AIO Liquid Cooling'],['Radiateur','360mm'],['Ventilateurs','3x 120mm ARGB'],['Écran pompe','LCD 2.1"'],['Compatibilité','AM4/AM5/LGA1700/1851'],['Garantie','5 ans']]},
-  {id:25,cat:'COOL',brand:'Noctua',name:'NH-D15 G2 Chromax.Black',short:'2x 140mm NF-A15 · 250W TDP · Air',price:119,old:null,badge:null,stock:'in',rating:4.9,rev:1567,img:'vt.png',specs:[['Type','Air Cooling Dual Tower'],['Ventilateurs','2x 140mm NF-A15'],['TDP Max','250W'],['Hauteur','165mm'],['Garantie','6 ans']]},
-  {id:26,cat:'COOL',brand:'ASUS',name:'ROG Ryujin III 360 ARGB',short:'AIO 360mm · 3x 120mm ARGB · LCD 3.5"',price:279,old:329,badge:'promo',stock:'in',rating:4.7,rev:234,img:'rog.png',specs:[['Type','AIO 360mm'],['Écran pompe','LCD 3.5"'],['Ventilateurs','3x 120mm ARGB'],['Logiciel','Armory Crate']]},
-  {id:27,cat:'CASE',brand:'Lian Li',name:'O11 Dynamic EVO XL Tower',short:'Full Tower · ARGB · E-ATX · Verre Trempé',price:189,old:null,badge:'top',stock:'low',rating:4.9,rev:892,img:'tw.png',specs:[['Format','Full Tower'],['Compatibilité','E-ATX, ATX, mATX'],['Baies ventilateurs','11x 120mm max'],['Verre trempé','3 faces'],['Dimensions','541×285×531mm']]},
-  {id:28,cat:'CASE',brand:'Fractal',name:'Torrent Compact RGB TG',short:'Mid Tower · Airflow · 2x 140mm',price:129,old:149,badge:null,stock:'in',rating:4.8,rev:567,img:'cp.png',specs:[['Format','Mid Tower'],['Ventilateurs inclus','3x (2x140 + 1x120)'],['Compatibilité','ATX, mATX, ITX'],['Verre trempé','Face avant + latérale']]},
-  {id:29,cat:'PERI',brand:'Logitech',name:'G Pro X Superlight 2 DEX',short:'34g · Capteur HERO 2 · 32000 DPI',price:159,old:null,badge:'new',stock:'in',rating:4.9,rev:789,img:'gt.png',specs:[['Poids','34g'],['Capteur','HERO 2'],['DPI','100 - 32 000'],['Autonomie','300h'],['Connectivité','Sans fil 2.4 GHz'],['Boutons','5 programmables']]},
-  {id:30,cat:'PERI',brand:'Corsair',name:'K70 RGB Pro MX Red',short:'Cherry MX Red · PBT Double Shot · USB-C',price:129,old:159,badge:'promo',stock:'in',rating:4.7,rev:1024,img:'k70.png',specs:[['Switches','Cherry MX Red'],['Touches','PBT Double Shot'],['Châssis','Aluminium brushed'],['Rétroéclairage','RGB par touche'],['Connectivité','USB-C détachable']]},
-  {id:31,cat:'PERI',brand:'Logitech',name:'G502 X Plus Hero 25K',short:'89g · HERO 25K · 7 boutons · LightSpeed',price:99,old:129,badge:'promo',stock:'in',rating:4.8,rev:1567,img:'sr.png',specs:[['Poids','89g'],['Capteur','HERO 25K'],['DPI','100 - 25 600'],['Autonomie','130h'],['Boutons','7 programmables']]},
-  {id:32,cat:'PERI',brand:'SteelSeries',name:'Arctis Nova Pro Wireless',short:'Hi-Res · DAC + EQ · PS5/PC · 22h',price:279,old:329,badge:null,stock:'in',rating:4.7,rev:456,img:'cs2.png',specs:[['Connexion','2x 2.4 GHz / BT'],['Réponse fréq.','10-40 000 Hz'],['DAC','Inclus + égaliseur'],['Autonomie','22h + 22h'],['Micro','ClearCast rétractable']]},
-  {id:33,cat:'MON',brand:'ASUS',name:'ROG Swift PG279QM 27" 240Hz',short:'27" IPS · 2560x1440 · 240Hz · G-Sync',price:699,old:799,badge:'promo',stock:'in',rating:4.8,rev:312,img:'asus.png',specs:[['Taille','27"'],['Résolution','2560×1440 (WQHD)'],['Dalle','IPS'],['Fréquence','240 Hz'],['Temps réponse','1ms GtG'],['HDR','DisplayHDR 600'],['Sync','G-Sync Ultimate']]},
-  {id:34,cat:'MON',brand:'LG',name:'UltraGear 27GR95QE OLED 240Hz',short:'26.5" OLED · 2560x1440 · 240Hz · 0.03ms',price:799,old:949,badge:'promo',stock:'low',rating:4.9,rev:234,img:'lg.png',specs:[['Taille','26.5"'],['Résolution','2560×1440'],['Dalle','OLED'],['Fréquence','240 Hz'],['Temps réponse','0.03ms']]},
-  {id:35,cat:'MON',brand:'Samsung',name:'Odyssey G9 OLED 49" 240Hz',short:'49" OLED Curved · 5120x1440 · 240Hz',price:1399,old:1599,badge:null,stock:'in',rating:4.7,rev:156,img:'ads.png',specs:[['Taille','49"'],['Résolution','5120×1440 (DQHD)'],['Dalle','OLED Curved'],['Fréquence','240 Hz'],['Courbure','1800R']]}
+  {id:1,cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 5090 32GB GDDR7',short:'32Go GDDR7 · PCIe 5.0 · 575W · DLSS 4',price:1311000,old:null,badge:'new',stock:'in',rating:4.9,rev:312,img:'5090.png',specs:[['Mémoire','32 Go GDDR7'],['Interface','PCIe 5.0 x16'],['TDP','575W'],['Connecteurs','4x PCIe 16-pin'],['Sorties','3x DP 2.1, 1x HDMI 2.1'],['DLSS','4.0 Frame Generation']]},
+  {id:2,cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 5080 16GB GDDR7',short:'16Go GDDR7 · PCIe 5.0 · 320W · DLSS 4',price:786000,old:937000,badge:'promo',stock:'in',rating:4.8,rev:287,img:'5080.png',specs:[['Mémoire','16 Go GDDR7'],['Interface','PCIe 5.0 x16'],['TDP','320W'],['Sorties','3x DP 2.1, 1x HDMI 2.1'],['Perf','4K Ultra']]},
+  {id:3,cat:'GPU',brand:'AMD',name:'Radeon RX 9070 XT 16GB',short:'16Go GDDR6 · PCIe 5.0 · 304W · FSR 4',price:459000,old:null,badge:'new',stock:'in',rating:4.7,rev:198,img:'9070xt.png',specs:[['Mémoire','16 Go GDDR6'],['Interface','PCIe 5.0 x16'],['TDP','304W'],['Technologie','AMD FSR 4'],['Sorties','2x DP 2.1, 2x HDMI 2.1']]},
+  {id:4,cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 4070 Super 12GB',short:'12Go GDDR6X · PCIe 4.0 · 220W · 1440p',price:373000,old:426000,badge:'promo',stock:'in',rating:4.8,rev:445,img:'super.png',specs:[['Mémoire','12 Go GDDR6X'],['Interface','PCIe 4.0 x16'],['TDP','220W'],['Idéal','1440p Ultra']]},
+  {id:5,cat:'GPU',brand:'AMD',name:'Radeon RX 7900 XTX 24GB',short:'24Go GDDR6 · PCIe 4.0 · 355W · 4K',price:557000,old:655000,badge:'promo',stock:'low',rating:4.6,rev:223,img:'xtx.png',specs:[['Mémoire','24 Go GDDR6'],['Interface','PCIe 4.0 x16'],['TDP','355W'],['Idéal','4K Ultra']]},
+  {id:6,cat:'CPU',brand:'AMD',name:'Ryzen 9 9950X 16 Cœurs',short:'16C/32T · 5.7 GHz Boost · AM5 · 170W',price:413000,old:504000,badge:'promo',stock:'in',rating:4.9,rev:534,img:'r9.png',specs:[['Cœurs/Threads','16C / 32T'],['Fréquence Boost','5.7 GHz'],['Cache L3','64 Mo'],['Socket','AM5'],['TDP','170W'],['Mémoire','DDR5-5600']]},
+  {id:7,cat:'CPU',brand:'Intel',name:'Core Ultra 9 285K 24 Cœurs',short:'24C/24T · 5.7 GHz · LGA1851 · 125W',price:386000,old:null,badge:'new',stock:'in',rating:4.8,rev:312,img:'core.png',specs:[['Cœurs','24 (8P+16E)'],['Fréquence Boost','5.7 GHz'],['Cache L3','36 Mo'],['Socket','LGA1851'],['TDP','125W'],['Mémoire','DDR5-6400']]},
+  {id:8,cat:'CPU',brand:'AMD',name:'Ryzen 7 9700X 8 Cœurs',short:'8C/16T · 5.5 GHz · AM5 · 65W',price:216000,old:null,badge:null,stock:'in',rating:4.7,rev:678,img:'r7.png',specs:[['Cœurs/Threads','8C / 16T'],['Fréquence Boost','5.5 GHz'],['Cache L3','32 Mo'],['Socket','AM5'],['TDP','65W']]},
+  {id:9,cat:'CPU',brand:'Intel',name:'Core i5-14600K 14 Cœurs',short:'14C/20T · 5.3 GHz · LGA1700 · 125W',price:183000,old:216000,badge:'promo',stock:'in',rating:4.8,rev:892,img:'i5.png',specs:[['Cœurs','14 (6P+8E)'],['Fréquence Boost','5.3 GHz'],['Cache L3','24 Mo'],['Socket','LGA1700'],['TDP','125W']]},
+  {id:10,cat:'CPU',brand:'AMD',name:'Ryzen 5 7600X 6 Cœurs',short:'6C/12T · 5.3 GHz · AM5 · 105W',price:124000,old:163000,badge:'promo',stock:'in',rating:4.6,rev:1024,img:'r5.png',specs:[['Cœurs/Threads','6C / 12T'],['Fréquence Boost','5.3 GHz'],['Socket','AM5'],['TDP','105W']]},
+  {id:11,cat:'CPU',brand:'Intel',name:'Core Ultra 5 245K 14 Cœurs',short:'14C · 5.2 GHz · LGA1851 · 125W',price:209000,old:null,badge:'new',stock:'in',rating:4.5,rev:156,img:'i5.png',specs:[['Cœurs','14 (6P+8E)'],['Fréquence Boost','5.2 GHz'],['Socket','LGA1851'],['TDP','125W']]},
+  {id:12,cat:'MB',brand:'ASUS',name:'ROG Maximus Z890 Hero WiFi',short:'Intel Z890 · DDR5 · PCIe 5.0 · WiFi 7',price:393000,old:null,badge:'new',stock:'in',rating:4.7,rev:89,img:'mb1.png',specs:[['Chipset','Intel Z890'],['Format','ATX'],['Slots DDR5','4x (max 192Go)'],['PCIe 5.0','2x x16'],['WiFi','WiFi 7 (BE)'],['USB','4x USB 3.2 Gen 2x2']]},
+  {id:13,cat:'MB',brand:'MSI',name:'MEG X870E ACE WiFi 7',short:'AMD X870E · DDR5 · PCIe 5.0 · WiFi 7',price:327000,old:null,badge:'new',stock:'in',rating:4.8,rev:124,img:'mb2.png',specs:[['Chipset','AMD X870E'],['Format','E-ATX'],['Slots DDR5','4x (max 256Go)'],['WiFi','WiFi 7 (BE)'],['Phases VRM','22+2+2']]},
+  {id:14,cat:'MB',brand:'ASUS',name:'PRIME B650-PLUS DDR5',short:'AMD B650 · DDR5 · PCIe 4.0 · M.2 x4',price:124000,old:144000,badge:'promo',stock:'in',rating:4.5,rev:342,img:'mb3.png',specs:[['Chipset','AMD B650'],['Format','ATX'],['Slots DDR5','4x (max 128Go)'],['M.2','4x NVMe PCIe 4.0']]},
+  {id:15,cat:'RAM',brand:'Corsair',name:'Vengeance DDR5 64Go 6400MHz',short:'2x32Go · CL32 · XMP 3.0 · RGB',price:111000,old:144000,badge:'promo',stock:'in',rating:4.6,rev:567,img:'ram1.png',specs:[['Capacité','2x 32 Go'],['Fréquence','6400 MHz'],['Latence','CL32-39-39-76'],['Voltage','1.4V'],['Profil','XMP 3.0'],['RGB','Oui']]},
+  {id:16,cat:'RAM',brand:'G.Skill',name:'Trident Z5 RGB 32Go 7200MHz',short:'2x16Go · CL34 · XMP 3.0 · RGB',price:91000,old:null,badge:'top',stock:'in',rating:4.9,rev:423,img:'ram2.png',specs:[['Capacité','2x 16 Go'],['Fréquence','7200 MHz'],['Latence','CL34'],['Profil','XMP 3.0 / EXPO'],['RGB','Oui']]},
+  {id:17,cat:'RAM',brand:'Kingston',name:'Fury Beast DDR5 32Go 5600MHz',short:'2x16Go · CL36 · DDR5-5600 · Expo',price:52000,old:65000,badge:'promo',stock:'in',rating:4.4,rev:789,img:'ddr4.png',specs:[['Capacité','2x 16 Go'],['Fréquence','5600 MHz'],['Latence','CL36'],['Profil','EXPO / XMP']]},
+  {id:18,cat:'SSD',brand:'Samsung',name:'990 Pro NVMe 2To M.2',short:'7 450 Mo/s lect · PCIe 4.0 · 1200 TBW',price:98000,old:null,badge:'top',stock:'in',rating:4.9,rev:1247,img:'990.png',specs:[['Capacité','2 To'],['Interface','PCIe 4.0 x4 NVMe'],['Lecture','7 450 Mo/s'],['Écriture','6 900 Mo/s'],['Endurance','1 200 TBW'],['Format','M.2 2280']]},
+  {id:19,cat:'SSD',brand:'WD',name:'Black SN850X 4To NVMe',short:'7 300 Mo/s · PCIe 4.0 · Gaming',price:190000,old:229000,badge:'promo',stock:'in',rating:4.8,rev:567,img:'ssd1.png',specs:[['Capacité','4 To'],['Lecture','7 300 Mo/s'],['Écriture','6 600 Mo/s'],['Interface','PCIe 4.0 x4']]},
+  {id:20,cat:'SSD',brand:'Crucial',name:'T700 2To PCIe 5.0 NVMe',short:'12 400 Mo/s · PCIe 5.0 · Dissipateur',price:144000,old:null,badge:'new',stock:'in',rating:4.7,rev:234,img:'ssd2.png',specs:[['Capacité','2 To'],['Interface','PCIe 5.0 x4 NVMe'],['Lecture','12 400 Mo/s'],['Écriture','11 800 Mo/s'],['Format','M.2 + dissipateur']]},
+  {id:21,cat:'SSD',brand:'Samsung',name:'870 EVO 4To SATA',short:'560 Mo/s · SATA III · Grand stockage',price:150000,old:183000,badge:null,stock:'in',rating:4.7,rev:2341,img:'hdd.png',specs:[['Capacité','4 To'],['Interface','SATA III'],['Lecture','560 Mo/s'],['Écriture','530 Mo/s']]},
+  {id:22,cat:'PSU',brand:'be quiet!',name:'Dark Power 13 1000W Titanium',short:'1000W · 80+ Titanium · Modulaire',price:150000,old:null,badge:'top',stock:'in',rating:4.9,rev:445,img:'alim1.png',specs:[['Puissance','1 000 W'],['Certification','80+ Titanium'],['Câbles','Modulaire'],['Ventilateur','135mm'],['Connecteurs GPU','2x 12V-2x6'],['Garantie','10 ans']]},
+  {id:23,cat:'PSU',brand:'Corsair',name:'RM1000x SHIFT 1000W Gold',short:'1000W · 80+ Gold · Side-Connect',price:117000,old:137000,badge:'promo',stock:'in',rating:4.7,rev:312,img:'alim2.png',specs:[['Puissance','1 000 W'],['Certification','80+ Gold'],['Innovation','Connecteurs latéraux'],['Garantie','7 ans']]},
+  {id:24,cat:'COOL',brand:'Corsair',name:'iCUE H150i RGB Elite 360mm',short:'AIO 360mm · Triple 120mm ARGB · LCD',price:131000,old:null,badge:null,stock:'low',rating:4.6,rev:678,img:'cf.png',specs:[['Type','AIO Liquid Cooling'],['Radiateur','360mm'],['Ventilateurs','3x 120mm ARGB'],['Écran pompe','LCD 2.1"'],['Compatibilité','AM4/AM5/LGA1700/1851'],['Garantie','5 ans']]},
+  {id:25,cat:'COOL',brand:'Noctua',name:'NH-D15 G2 Chromax.Black',short:'2x 140mm NF-A15 · 250W TDP · Air',price:78000,old:null,badge:null,stock:'in',rating:4.9,rev:1567,img:'vt.png',specs:[['Type','Air Cooling Dual Tower'],['Ventilateurs','2x 140mm NF-A15'],['TDP Max','250W'],['Hauteur','165mm'],['Garantie','6 ans']]},
+  {id:26,cat:'COOL',brand:'ASUS',name:'ROG Ryujin III 360 ARGB',short:'AIO 360mm · 3x 120mm ARGB · LCD 3.5"',price:183000,old:216000,badge:'promo',stock:'in',rating:4.7,rev:234,img:'rog.png',specs:[['Type','AIO 360mm'],['Écran pompe','LCD 3.5"'],['Ventilateurs','3x 120mm ARGB'],['Logiciel','Armory Crate']]},
+  {id:27,cat:'CASE',brand:'Lian Li',name:'O11 Dynamic EVO XL Tower',short:'Full Tower · ARGB · E-ATX · Verre Trempé',price:124000,old:null,badge:'top',stock:'low',rating:4.9,rev:892,img:'tw.png',specs:[['Format','Full Tower'],['Compatibilité','E-ATX, ATX, mATX'],['Baies ventilateurs','11x 120mm max'],['Verre trempé','3 faces'],['Dimensions','541×285×531mm']]},
+  {id:28,cat:'CASE',brand:'Fractal',name:'Torrent Compact RGB TG',short:'Mid Tower · Airflow · 2x 140mm',price:85000,old:98000,badge:null,stock:'in',rating:4.8,rev:567,img:'cp.png',specs:[['Format','Mid Tower'],['Ventilateurs inclus','3x (2x140 + 1x120)'],['Compatibilité','ATX, mATX, ITX'],['Verre trempé','Face avant + latérale']]},
+  {id:29,cat:'PERI',brand:'Logitech',name:'G Pro X Superlight 2 DEX',short:'34g · Capteur HERO 2 · 32000 DPI',price:104000,old:null,badge:'new',stock:'in',rating:4.9,rev:789,img:'gt.png',specs:[['Poids','34g'],['Capteur','HERO 2'],['DPI','100 - 32 000'],['Autonomie','300h'],['Connectivité','Sans fil 2.4 GHz'],['Boutons','5 programmables']]},
+  {id:30,cat:'PERI',brand:'Corsair',name:'K70 RGB Pro MX Red',short:'Cherry MX Red · PBT Double Shot · USB-C',price:85000,old:104000,badge:'promo',stock:'in',rating:4.7,rev:1024,img:'k70.png',specs:[['Switches','Cherry MX Red'],['Touches','PBT Double Shot'],['Châssis','Aluminium brushed'],['Rétroéclairage','RGB par touche'],['Connectivité','USB-C détachable']]},
+  {id:31,cat:'PERI',brand:'Logitech',name:'G502 X Plus Hero 25K',short:'89g · HERO 25K · 7 boutons · LightSpeed',price:65000,old:85000,badge:'promo',stock:'in',rating:4.8,rev:1567,img:'sr.png',specs:[['Poids','89g'],['Capteur','HERO 25K'],['DPI','100 - 25 600'],['Autonomie','130h'],['Boutons','7 programmables']]},
+  {id:32,cat:'PERI',brand:'SteelSeries',name:'Arctis Nova Pro Wireless',short:'Hi-Res · DAC + EQ · PS5/PC · 22h',price:183000,old:216000,badge:null,stock:'in',rating:4.7,rev:456,img:'cs2.png',specs:[['Connexion','2x 2.4 GHz / BT'],['Réponse fréq.','10-40 000 Hz'],['DAC','Inclus + égaliseur'],['Autonomie','22h + 22h'],['Micro','ClearCast rétractable']]},
+  {id:33,cat:'MON',brand:'ASUS',name:'ROG Swift PG279QM 27" 240Hz',short:'27" IPS · 2560x1440 · 240Hz · G-Sync',price:459000,old:524000,badge:'promo',stock:'in',rating:4.8,rev:312,img:'asus.png',specs:[['Taille','27"'],['Résolution','2560×1440 (WQHD)'],['Dalle','IPS'],['Fréquence','240 Hz'],['Temps réponse','1ms GtG'],['HDR','DisplayHDR 600'],['Sync','G-Sync Ultimate']]},
+  {id:34,cat:'MON',brand:'LG',name:'UltraGear 27GR95QE OLED 240Hz',short:'26.5" OLED · 2560x1440 · 240Hz · 0.03ms',price:524000,old:622000,badge:'promo',stock:'low',rating:4.9,rev:234,img:'lg.png',specs:[['Taille','26.5"'],['Résolution','2560×1440'],['Dalle','OLED'],['Fréquence','240 Hz'],['Temps réponse','0.03ms']]},
+  {id:35,cat:'MON',brand:'Samsung',name:'Odyssey G9 OLED 49" 240Hz',short:'49" OLED Curved · 5120x1440 · 240Hz',price:918000,old:1049000,badge:null,stock:'in',rating:4.7,rev:156,img:'ads.png',specs:[['Taille','49"'],['Résolution','5120×1440 (DQHD)'],['Dalle','OLED Curved'],['Fréquence','240 Hz'],['Courbure','1800R']]}
 ];
 
 const WA_NUMBER='241076545956';
-function sendToWhatsApp(e){e.preventDefault();const nom=document.getElementById('m-name').value.trim();const email=document.getElementById('m-email').value.trim();const tel=document.getElementById('m-phone').value.trim();const budget=document.getElementById('m-budget').value.trim();const composants=document.getElementById('m-components').value.trim();const aide=document.getElementById('m-help').value;const info=document.getElementById('m-info').value.trim();const msg=`🖥️ *DEMANDE DE MONTAGE PC — GABHARDWARE*\n━━━━━━━━━━━━━━━━━━━━━━━━\n👤 *Nom :* ${nom}\n📧 *Email :* ${email}\n📞 *Téléphone :* ${tel}\n💰 *Budget :* ${budget} €\n━━━━━━━━━━━━━━━━━━━━━━━━\n🔧 *Composants souhaités :*\n${composants||'Non précisé'}\n\n🤝 *Besoin de conseil :* ${aide}\n\n📝 *Informations supplémentaires :*\n${info||'Aucune'}\n━━━━━━━━━━━━━━━━━━━━━━━━\n_Message envoyé depuis gabhardware.com_`;window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');document.getElementById('montageForm').reset();toast('✓ Redirection vers <span>WhatsApp</span> — merci !');}
+// Seuil livraison gratuite en FCFA (≈ 99€)
+const FREE_SHIP_THRESHOLD = 65000;
+const SHIP_COST = 3500; // frais de port en FCFA
+
+function sendToWhatsApp(e){e.preventDefault();const nom=document.getElementById('m-name').value.trim();const email=document.getElementById('m-email').value.trim();const tel=document.getElementById('m-phone').value.trim();const budget=document.getElementById('m-budget').value.trim();const composants=document.getElementById('m-components').value.trim();const aide=document.getElementById('m-help').value;const info=document.getElementById('m-info').value.trim();const msg=`🖥️ *DEMANDE DE MONTAGE PC — GABHARDWARE*\n━━━━━━━━━━━━━━━━━━━━━━━━\n👤 *Nom :* ${nom}\n📧 *Email :* ${email}\n📞 *Téléphone :* ${tel}\n💰 *Budget :* ${parseInt(budget).toLocaleString('fr-FR')} FCFA\n━━━━━━━━━━━━━━━━━━━━━━━━\n🔧 *Composants souhaités :*\n${composants||'Non précisé'}\n\n🤝 *Besoin de conseil :* ${aide}\n\n📝 *Informations supplémentaires :*\n${info||'Aucune'}\n━━━━━━━━━━━━━━━━━━━━━━━━\n_Message envoyé depuis gabhardware.com_`;window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');document.getElementById('montageForm').reset();toast('✓ Redirection vers <span>WhatsApp</span> — merci !');}
 
 function openContactModal(){document.getElementById('contactModal').classList.add('open');document.body.style.overflow='hidden';}
 function closeContactModal(){document.getElementById('contactModal').classList.remove('open');document.body.style.overflow='';}
 
+// ===== CART (avec localStorage) =====
+const CART_KEY = 'gabhw-cart';
+
+function saveCart(){
+  try{localStorage.setItem(CART_KEY, JSON.stringify(cart));}catch(e){console.warn('Impossible de sauvegarder le panier',e);}
+}
+
+function loadCart(){
+  try{
+    const saved = localStorage.getItem(CART_KEY);
+    if(saved){
+      const parsed = JSON.parse(saved);
+      // Vérifier que les ids correspondent encore aux produits existants
+      cart = parsed.filter(item => P.find(p => p.id === item.id)).map(item => {
+        const product = P.find(p => p.id === item.id);
+        return {...product, qty: item.qty};
+      });
+    }
+  }catch(e){
+    console.warn('Erreur chargement panier',e);
+    cart = [];
+  }
+}
+
 let cart=[];
-function addToCart(id,e){if(e)e.stopPropagation();const p=P.find(x=>x.id===id);if(!p)return;const ex=cart.find(x=>x.id===id);if(ex)ex.qty++;else cart.push({...p,qty:1});renderCart();toast(`<span>${p.name.substring(0,28)}...</span> ajouté au panier`);}
-function removeFromCart(id){cart=cart.filter(x=>x.id!==id);renderCart();}
-function changeQty(id,d){const item=cart.find(x=>x.id===id);if(!item)return;item.qty+=d;if(item.qty<=0)removeFromCart(id);else renderCart();}
-function renderCart(){const total=cart.reduce((s,i)=>s+i.price*i.qty,0);const count=cart.reduce((s,i)=>s+i.qty,0);document.getElementById('cartBadge').textContent=count;const el=document.getElementById('cartItems');const footer=document.getElementById('cartFooter');if(!cart.length){el.innerHTML=`<div class="cart-empty"><div class="cart-empty-icon">🛒</div><div class="cart-empty-text">Votre panier est vide</div><button class="btn-secondary" style="margin-top:12px;" onclick="closeCart();showPage('catalog')">PARCOURIR LE CATALOGUE</button></div>`;footer.style.display='none';}else{el.innerHTML=cart.map(i=>`<div class="cart-item"><div class="cart-item-img"><img src="${i.img}" alt="${i.name}"></div><div class="cart-item-info"><div class="cart-item-brand">${i.brand}</div><div class="cart-item-name">${i.name}</div><div class="cart-item-price">${(i.price*i.qty).toLocaleString('fr-FR')}€</div><div class="cart-item-qty"><button class="qty-btn" onclick="changeQty(${i.id},-1)">−</button><span class="qty-val">${i.qty}</span><button class="qty-btn" onclick="changeQty(${i.id},1)">+</button><button class="cart-remove" onclick="removeFromCart(${i.id})">🗑</button></div></div></div>`).join('');footer.style.display='block';document.getElementById('cartTotal').textContent=total.toLocaleString('fr-FR')+'€';const ship=document.getElementById('cartShipping');if(total>=99){ship.textContent='✓ Livraison gratuite incluse';ship.style.color='var(--green)';}else{ship.textContent=`Encore ${99-total}€ pour la livraison gratuite`;ship.style.color='var(--text2)';}}}
+
+function addToCart(id,e){
+  if(e)e.stopPropagation();
+  const p=P.find(x=>x.id===id);
+  if(!p)return;
+  const ex=cart.find(x=>x.id===id);
+  if(ex)ex.qty++;
+  else cart.push({...p,qty:1});
+  saveCart();
+  renderCart();
+  toast(`<span>${p.name.substring(0,28)}...</span> ajouté au panier`);
+}
+
+function removeFromCart(id){
+  cart=cart.filter(x=>x.id!==id);
+  saveCart();
+  renderCart();
+}
+
+function changeQty(id,d){
+  const item=cart.find(x=>x.id===id);
+  if(!item)return;
+  item.qty+=d;
+  if(item.qty<=0)removeFromCart(id);
+  else{saveCart();renderCart();}
+}
+
+function renderCart(){
+  const total=cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const count=cart.reduce((s,i)=>s+i.qty,0);
+  document.getElementById('cartBadge').textContent=count;
+  const el=document.getElementById('cartItems');
+  const footer=document.getElementById('cartFooter');
+  if(!cart.length){
+    el.innerHTML=`<div class="cart-empty"><div class="cart-empty-icon">🛒</div><div class="cart-empty-text">Votre panier est vide</div><button class="btn-secondary" style="margin-top:12px;" onclick="closeCart();showPage('catalog')">PARCOURIR LE CATALOGUE</button></div>`;
+    footer.style.display='none';
+  }else{
+    el.innerHTML=cart.map(i=>`<div class="cart-item"><div class="cart-item-img"><img src="${i.img}" alt="${i.name}"></div><div class="cart-item-info"><div class="cart-item-brand">${i.brand}</div><div class="cart-item-name">${i.name}</div><div class="cart-item-price">${fcfa(i.price*i.qty)}</div><div class="cart-item-qty"><button class="qty-btn" onclick="changeQty(${i.id},-1)">−</button><span class="qty-val">${i.qty}</span><button class="qty-btn" onclick="changeQty(${i.id},1)">+</button><button class="cart-remove" onclick="removeFromCart(${i.id})">🗑</button></div></div></div>`).join('');
+    footer.style.display='block';
+    document.getElementById('cartTotal').textContent=fcfa(total);
+    const ship=document.getElementById('cartShipping');
+    if(total>=FREE_SHIP_THRESHOLD){
+      ship.textContent='✓ Livraison gratuite incluse';
+      ship.style.color='var(--green)';
+    }else{
+      ship.textContent=`Encore ${fcfa(FREE_SHIP_THRESHOLD-total)} pour la livraison gratuite`;
+      ship.style.color='var(--text2)';
+    }
+  }
+}
+
 function openCart(){document.getElementById('cartOverlay').classList.add('open');document.getElementById('cartSidebar').classList.add('open');document.body.style.overflow='hidden';}
 function closeCart(){document.getElementById('cartOverlay').classList.remove('open');document.getElementById('cartSidebar').classList.remove('open');document.body.style.overflow='';}
 
-function openCheckout(){closeCart();const total=cart.reduce((s,i)=>s+i.price*i.qty,0);const ship=total>=99?0:5.99;const lines=cart.map(i=>`<div class="checkout-line"><span>${i.name.substring(0,28)}... ×${i.qty}</span><span>${(i.price*i.qty).toLocaleString('fr-FR')}€</span></div>`).join('');document.getElementById('checkoutContent').innerHTML=`<button class="modal-close" onclick="closeCheckoutModal()" style="position:absolute;top:16px;right:16px;">✕</button><div class="checkout-title">Finaliser la commande</div><div class="form-grid"><div class="form-group"><label>Prénom</label><input type="text" placeholder="Jean"></div><div class="form-group"><label>Nom</label><input type="text" placeholder="Dupont"></div><div class="form-group full"><label>Email</label><input type="email" placeholder="jean@exemple.fr"></div><div class="form-group full"><label>Adresse</label><input type="text" placeholder="123 rue de la Paix"></div><div class="form-group"><label>Ville</label><input type="text" placeholder="Libreville"></div><div class="form-group"><label>Code Postal</label><input type="text" placeholder="00241"></div><div class="form-group full"><label>Numéro de carte</label><input type="text" placeholder="•••• •••• •••• ••••"></div><div class="form-group"><label>Expiration</label><input type="text" placeholder="MM/AA"></div><div class="form-group"><label>CVV</label><input type="text" placeholder="•••"></div></div><div class="checkout-summary"><div class="checkout-summary-title">RÉCAPITULATIF</div>${lines}<div class="checkout-line"><span>Livraison</span><span>${ship===0?'GRATUITE':ship+'€'}</span></div><div class="checkout-line total"><span>Total</span><span>${(total+ship).toLocaleString('fr-FR')}€</span></div></div><button class="checkout-submit" onclick="placeOrder()">✓ CONFIRMER LA COMMANDE</button>`;document.getElementById('checkoutModal').classList.add('open');document.body.style.overflow='hidden';}
-function placeOrder(){document.getElementById('checkoutContent').innerHTML=`<div class="success-screen"><div class="success-icon">✅</div><div class="success-title">Commande Confirmée !</div><p class="success-desc">Merci pour votre commande ! Vous recevrez un email de confirmation sous peu. Livraison estimée sous 24-48h ouvrées.</p><button class="btn-primary" onclick="closeCheckoutModal();cart=[];renderCart();">RETOUR À L'ACCUEIL</button></div>`;}
+function openCheckout(){
+  closeCart();
+  const total=cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const ship=total>=FREE_SHIP_THRESHOLD?0:SHIP_COST;
+  const lines=cart.map(i=>`<div class="checkout-line"><span>${i.name.substring(0,28)}... ×${i.qty}</span><span>${fcfa(i.price*i.qty)}</span></div>`).join('');
+  document.getElementById('checkoutContent').innerHTML=`<button class="modal-close" onclick="closeCheckoutModal()" style="position:absolute;top:16px;right:16px;">✕</button><div class="checkout-title">Finaliser la commande</div><div class="form-grid"><div class="form-group"><label>Prénom</label><input type="text" placeholder="Jean"></div><div class="form-group"><label>Nom</label><input type="text" placeholder="Dupont"></div><div class="form-group full"><label>Email</label><input type="email" placeholder="jean@exemple.fr"></div><div class="form-group full"><label>Adresse</label><input type="text" placeholder="Quartier / Rue, Libreville"></div><div class="form-group"><label>Ville</label><input type="text" placeholder="Libreville"></div><div class="form-group"><label>Téléphone</label><input type="text" placeholder="+241 XX XX XX XX"></div><div class="form-group full"><label>Mode de paiement</label><select><option>Airtel Money</option><option>Moov Money</option><option>Virement bancaire</option><option>Visa / Mastercard</option></select></div></div><div class="checkout-summary"><div class="checkout-summary-title">RÉCAPITULATIF</div>${lines}<div class="checkout-line"><span>Livraison</span><span>${ship===0?'GRATUITE':fcfa(ship)}</span></div><div class="checkout-line total"><span>Total</span><span>${fcfa(total+ship)}</span></div></div><button class="checkout-submit" onclick="placeOrder()">✓ CONFIRMER LA COMMANDE</button>`;
+  document.getElementById('checkoutModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function placeOrder(){
+  document.getElementById('checkoutContent').innerHTML=`<div class="success-screen"><div class="success-icon">✅</div><div class="success-title">Commande Confirmée !</div><p class="success-desc">Merci pour votre commande ! Vous recevrez une confirmation sous peu. Livraison estimée sous 24-48h ouvrées à Libreville.</p><button class="btn-primary" onclick="closeCheckoutModal();cart=[];saveCart();renderCart();">RETOUR À L'ACCUEIL</button></div>`;
+}
+
 function closeCheckoutModal(){document.getElementById('checkoutModal').classList.remove('open');document.body.style.overflow='';}
 
-function openProduct(id){const p=P.find(x=>x.id===id);if(!p)return;const stars='★'.repeat(Math.floor(p.rating))+'☆'.repeat(5-Math.floor(p.rating));const oldHtml=p.old?`<span class="modal-price-old">${p.old}€</span>`:'';const sClass=p.stock==='in'?'in-stock':'low-stock';const sLabel=p.stock==='in'?'EN STOCK':'STOCK LIMITÉ';const specs=p.specs.map(([k,v])=>`<div class="spec-row"><div class="spec-key">${k}</div><div class="spec-val">${v}</div></div>`).join('');document.getElementById('productModalContent').innerHTML=`<button class="modal-close" onclick="closeProductModal()">✕</button><div class="modal-inner"><div class="modal-img-area"><img src="${p.img}" alt="${p.name}"></div><div class="modal-info"><div class="modal-brand">${p.brand}</div><div class="modal-name">${p.name}</div><div class="modal-rating"><span class="stars" style="font-size:14px;">${stars}</span><span style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text2);">${p.rating} (${p.rev} avis)</span></div><div class="modal-price">${oldHtml}${p.price.toLocaleString('fr-FR')}€</div><div class="stock-indicator ${sClass}" style="margin-bottom:14px;"><span class="stock-dot"></span>${sLabel}</div><div class="modal-specs">${specs}</div><button class="modal-add-btn" onclick="addToCart(${p.id});closeProductModal();">🛒 AJOUTER AU PANIER</button></div></div>`;document.getElementById('productModal').classList.add('open');document.body.style.overflow='hidden';}
+function openProduct(id){
+  const p=P.find(x=>x.id===id);
+  if(!p)return;
+  const stars='★'.repeat(Math.floor(p.rating))+'☆'.repeat(5-Math.floor(p.rating));
+  const oldHtml=p.old?`<span class="modal-price-old">${fcfa(p.old)}</span>`:'';
+  const sClass=p.stock==='in'?'in-stock':'low-stock';
+  const sLabel=p.stock==='in'?'EN STOCK':'STOCK LIMITÉ';
+  const specs=p.specs.map(([k,v])=>`<div class="spec-row"><div class="spec-key">${k}</div><div class="spec-val">${v}</div></div>`).join('');
+  const savingsHtml=p.old?`<div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--green);margin-bottom:6px;">💰 Économie : ${fcfa(p.old-p.price)}</div>`:'';
+  document.getElementById('productModalContent').innerHTML=`<button class="modal-close" onclick="closeProductModal()">✕</button><div class="modal-inner"><div class="modal-img-area"><img src="${p.img}" alt="${p.name}"></div><div class="modal-info"><div class="modal-brand">${p.brand}</div><div class="modal-name">${p.name}</div><div class="modal-rating"><span class="stars" style="font-size:14px;">${stars}</span><span style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text2);">${p.rating} (${p.rev} avis)</span></div><div class="modal-price">${oldHtml}${fcfa(p.price)}</div>${savingsHtml}<div class="stock-indicator ${sClass}" style="margin-bottom:14px;"><span class="stock-dot"></span>${sLabel}</div><div class="modal-specs">${specs}</div><button class="modal-add-btn" onclick="addToCart(${p.id});closeProductModal();">🛒 AJOUTER AU PANIER</button></div></div>`;
+  document.getElementById('productModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
 function closeProductModal(){document.getElementById('productModal').classList.remove('open');document.body.style.overflow='';}
 
-function card(p){const bHtml=p.badge?`<span class="product-badge badge-${p.badge==='new'?'new':p.badge==='promo'?'promo':'top'}">${p.badge==='new'?'NOUVEAU':p.badge==='promo'?'-'+Math.round((1-p.price/p.old)*100)+'%':'TOP VENTE'}</span>`:'';const oHtml=p.old?`<span class="product-price-old">${p.old}€</span>`:'';const sClass=p.stock==='in'?'in-stock':'low-stock';const sLabel=p.stock==='in'?'EN STOCK':'STOCK LIMITÉ';return `<div class="product-card" onclick="openProduct(${p.id})">${bHtml}<div class="product-img-wrap"><img src="${p.img}" alt="${p.name}" loading="lazy"><button class="product-quick-add" onclick="addToCart(${p.id},event)">+ AJOUTER</button></div><div class="product-info"><div class="product-brand">${p.brand}</div><div class="product-name">${p.name}</div><div class="product-specs">${p.short}</div><div class="product-footer"><div>${oHtml}<span class="product-price">${p.price.toLocaleString('fr-FR')}€</span><div class="stock-indicator ${sClass}"><span class="stock-dot"></span>${sLabel}</div></div><div class="product-rating"><span class="stars">${'★'.repeat(Math.floor(p.rating))}</span> ${p.rating}</div></div></div></div>`;}
+function card(p){
+  const discountPct=p.old?Math.round((1-p.price/p.old)*100):0;
+  const bHtml=p.badge?`<span class="product-badge badge-${p.badge==='new'?'new':p.badge==='promo'?'promo':'top'}">${p.badge==='new'?'NOUVEAU':p.badge==='promo'?'-'+discountPct+'%':'TOP VENTE'}</span>`:'';
+  const oHtml=p.old?`<span class="product-price-old">${fcfa(p.old)}</span>`:'';
+  const sClass=p.stock==='in'?'in-stock':'low-stock';
+  const sLabel=p.stock==='in'?'EN STOCK':'STOCK LIMITÉ';
+  return `<div class="product-card" onclick="openProduct(${p.id})">${bHtml}<div class="product-img-wrap"><img src="${p.img}" alt="${p.name}" loading="lazy"><button class="product-quick-add" onclick="addToCart(${p.id},event)">+ AJOUTER</button></div><div class="product-info"><div class="product-brand">${p.brand}</div><div class="product-name">${p.name}</div><div class="product-specs">${p.short}</div><div class="product-footer"><div>${oHtml}<span class="product-price">${fcfa(p.price)}</span><div class="stock-indicator ${sClass}"><span class="stock-dot"></span>${sLabel}</div></div><div class="product-rating"><span class="stars">${'★'.repeat(Math.floor(p.rating))}</span> ${p.rating}</div></div></div></div>`;
+}
 
 function renderHome(){const featured=P.filter(p=>p.badge).slice(0,8);document.getElementById('homeFeatured').innerHTML=featured.map(card).join('');animCount('c1',50,1800);animCount('c2',120,1800);animCount('c3',24,800);}
 function animCount(id,target,dur){const el=document.getElementById(id);if(!el)return;const step=target/(dur/16);let v=0;const u=()=>{v=Math.min(v+step,target);el.textContent=Math.floor(v);if(v<target)requestAnimationFrame(u);};u();}
 
 let filtered=[...P];
-function renderCatalog(){const g=document.getElementById('catalogGrid');if(!filtered.length){g.innerHTML=`<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text2);font-family:'Barlow Condensed',sans-serif;font-size:22px;letter-spacing:2px;">AUCUN PRODUIT TROUVÉ</div>`;return;}g.innerHTML=filtered.map(card).join('');document.getElementById('catalogCount').textContent=filtered.length;document.getElementById('catalogCountHero').textContent=filtered.length+' produit'+(filtered.length>1?'s':'')+' en stock';}
+function renderCatalog(){
+  const g=document.getElementById('catalogGrid');
+  if(!filtered.length){g.innerHTML=`<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text2);font-family:'Barlow Condensed',sans-serif;font-size:22px;letter-spacing:2px;">AUCUN PRODUIT TROUVÉ</div>`;return;}
+  g.innerHTML=filtered.map(card).join('');
+  document.getElementById('catalogCount').textContent=filtered.length;
+  document.getElementById('catalogCountHero').textContent=filtered.length+' produit'+(filtered.length>1?'s':'')+' en stock';
+}
 
-function onFilterChange(cat){if(cat==='ALL'){['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].forEach(c=>{const e=document.getElementById('f-'+c);if(e)e.checked=false;});}else{document.getElementById('f-ALL').checked=false;}applyFilters();}
+function onFilterChange(cat){
+  if(cat==='ALL'){['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].forEach(c=>{const e=document.getElementById('f-'+c);if(e)e.checked=false;});}
+  else{document.getElementById('f-ALL').checked=false;}
+  applyFilters();
+}
 
-function applyFilters(){const allChecked=document.getElementById('f-ALL').checked;const cats=['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].filter(c=>document.getElementById('f-'+c)?.checked);const brandMap={nvidia:'NVIDIA',amd:'AMD',intel:'Intel',asus:'ASUS',corsair:'Corsair',samsung:'Samsung',msi:'MSI',bequiet:'be quiet!'};const brands=Object.keys(brandMap).filter(b=>document.getElementById('b-'+b)?.checked);const pmin=parseInt(document.getElementById('pMin').value)||0;const pmax=parseInt(document.getElementById('pMax').value)||9999;const inStock=document.getElementById('f-instock').checked;const promoOnly=document.getElementById('f-promo').checked;filtered=P.filter(p=>{if(!allChecked&&cats.length&&!cats.includes(p.cat))return false;if(brands.length&&!brands.some(b=>p.brand===brandMap[b]))return false;if(p.price<pmin||p.price>pmax)return false;if(inStock&&p.stock==='out')return false;if(promoOnly&&!p.old)return false;return true;});const s=document.getElementById('sortSel').value;if(s==='price-asc')filtered.sort((a,b)=>a.price-b.price);else if(s==='price-desc')filtered.sort((a,b)=>b.price-a.price);else if(s==='rating')filtered.sort((a,b)=>b.rating-a.rating);else if(s==='new')filtered.sort((a,b)=>(b.badge==='new'?1:0)-(a.badge==='new'?1:0));renderCatalog();}
+function applyFilters(){
+  const allChecked=document.getElementById('f-ALL').checked;
+  const cats=['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].filter(c=>document.getElementById('f-'+c)?.checked);
+  const brandMap={nvidia:'NVIDIA',amd:'AMD',intel:'Intel',asus:'ASUS',corsair:'Corsair',samsung:'Samsung',msi:'MSI',bequiet:'be quiet!'};
+  const brands=Object.keys(brandMap).filter(b=>document.getElementById('b-'+b)?.checked);
+  const pmin=parseInt(document.getElementById('pMin').value)||0;
+  const pmax=parseInt(document.getElementById('pMax').value)||9999999;
+  const inStock=document.getElementById('f-instock').checked;
+  const promoOnly=document.getElementById('f-promo').checked;
+  filtered=P.filter(p=>{
+    if(!allChecked&&cats.length&&!cats.includes(p.cat))return false;
+    if(brands.length&&!brands.some(b=>p.brand===brandMap[b]))return false;
+    if(p.price<pmin||p.price>pmax)return false;
+    if(inStock&&p.stock==='out')return false;
+    if(promoOnly&&!p.old)return false;
+    return true;
+  });
+  const s=document.getElementById('sortSel').value;
+  if(s==='price-asc')filtered.sort((a,b)=>a.price-b.price);
+  else if(s==='price-desc')filtered.sort((a,b)=>b.price-a.price);
+  else if(s==='rating')filtered.sort((a,b)=>b.rating-a.rating);
+  else if(s==='new')filtered.sort((a,b)=>(b.badge==='new'?1:0)-(a.badge==='new'?1:0));
+  renderCatalog();
+}
 
-function resetFilters(){document.getElementById('f-ALL').checked=true;['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].forEach(c=>{const e=document.getElementById('f-'+c);if(e)e.checked=false;});Object.keys({nvidia:1,amd:1,intel:1,asus:1,corsair:1,samsung:1,msi:1,bequiet:1}).forEach(b=>{const e=document.getElementById('b-'+b);if(e)e.checked=false;});document.getElementById('pMin').value=0;document.getElementById('pMax').value=9999;document.getElementById('f-instock').checked=false;document.getElementById('f-promo').checked=false;document.getElementById('sortSel').value='';filtered=[...P];renderCatalog();}
+function resetFilters(){
+  document.getElementById('f-ALL').checked=true;
+  ['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].forEach(c=>{const e=document.getElementById('f-'+c);if(e)e.checked=false;});
+  Object.keys({nvidia:1,amd:1,intel:1,asus:1,corsair:1,samsung:1,msi:1,bequiet:1}).forEach(b=>{const e=document.getElementById('b-'+b);if(e)e.checked=false;});
+  document.getElementById('pMin').value=0;
+  document.getElementById('pMax').value=9999999;
+  document.getElementById('f-instock').checked=false;
+  document.getElementById('f-promo').checked=false;
+  document.getElementById('sortSel').value='';
+  filtered=[...P];
+  renderCatalog();
+}
 
-function showPage(name,skipReset){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+name).classList.add('active');document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));const n=document.getElementById('nav-'+name);if(n)n.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(name==='catalog'&&!skipReset){filtered=[...P];renderCatalog();}if(name==='blog'){renderBlog(currentBlogFilter);}closeMobileNav();}
+function showPage(name,skipReset){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  const n=document.getElementById('nav-'+name);if(n)n.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(name==='catalog'&&!skipReset){filtered=[...P];renderCatalog();}
+  if(name==='blog'){renderBlog(currentBlogFilter);}
+  closeMobileNav();
+}
 function showCat(cat){showPage('catalog');setTimeout(()=>{document.getElementById('f-ALL').checked=false;['GPU','CPU','MB','RAM','SSD','PSU','COOL','CASE','PERI','MON'].forEach(c=>{const e=document.getElementById('f-'+c);if(e)e.checked=(c===cat);});applyFilters();},80);}
 function goSection(id){showPage('home');setTimeout(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'}),100);}
 function handleSearch(v){const q=v.trim().toLowerCase();if(!q){filtered=[...P];resetFilters();showPage('catalog');return;}filtered=P.filter(p=>p.name.toLowerCase().includes(q)||p.brand.toLowerCase().includes(q)||p.short.toLowerCase().includes(q)||p.cat.toLowerCase().includes(q));showPage('catalog',true);renderCatalog();}
@@ -1199,13 +1303,13 @@ if(window.matchMedia('(pointer:fine)').matches){
 // Blog
 const BLOG=[
   {id:1,featured:true,cat:'guide',catLabel:'Guide',emoji:'🖥️',title:'Comment choisir sa carte graphique en 2025 : le guide complet',excerpt:'RTX 5090, RX 9070 XT, budget, résolution cible… on t\'explique tout pour ne pas te tromper lors de ton achat.',author:'Nathan',authorInit:'N',date:'15 Jan 2025',readTime:'8 min',views:'4.2K',tags:['GPU','RTX 5090','Guide','Gaming'],content:`<p>Choisir une carte graphique en 2025 n'a jamais été aussi complexe — ni aussi excitant. Entre les nouvelles architectures NVIDIA Blackwell et AMD RDNA 4, les options sont nombreuses.</p><h3>1. Définir ta résolution cible</h3><p>Tout commence par là. Joues-tu en 1080p, 1440p ou 4K ?</p><ul><li><strong>1080p / 1440p gaming</strong> : RTX 4070 Super → excellent rapport perf/prix</li><li><strong>4K Ultra</strong> : RTX 5080 ou RX 9070 XT → le sweet spot en 2025</li><li><strong>4K + Ray Tracing maximal</strong> : RTX 5090 → la bête absolue</li></ul><div class="highlight">💡 La RTX 5080 offre 90% des perfs de la 5090 pour 60% du prix.</div><h3>2. NVIDIA vs AMD en 2025</h3><p>NVIDIA domine sur le ray tracing et l'upscaling (DLSS 4 est bluffant). AMD a comblé son retard sur FSR 4 et propose des prix plus agressifs avec la gamme RX 9000.</p>`,related:[2,3,4]},
-  {id:2,featured:false,cat:'test',catLabel:'Test',emoji:'⚡',title:'Test RTX 5090 : la carte graphique la plus puissante de l\'histoire',excerpt:'On a poussé la RTX 5090 dans ses retranchements : Cyberpunk 2077 4K, rendu Blender, températures. Le verdict.',author:'Kevin',authorInit:'K',date:'10 Jan 2025',readTime:'12 min',views:'8.7K',tags:['RTX 5090','Benchmark','NVIDIA','4K'],content:`<p>La GeForce RTX 5090 est arrivée dans notre labo avec une promesse folle : doubler les perfs de la RTX 4090.</p><div class="highlight">🎮 Cyberpunk 2077 4K Ultra RT : 94 FPS en moyenne avec DLSS Quality. La 4090 plafonnait à 52 FPS dans les mêmes conditions.</div><h3>Verdict</h3><p>La RTX 5090 est la meilleure carte graphique jamais produite. Son prix de 1999€ est justifié si tu joues en 4K.</p>`,related:[1,3,5]},
+  {id:2,featured:false,cat:'test',catLabel:'Test',emoji:'⚡',title:'Test RTX 5090 : la carte graphique la plus puissante de l\'histoire',excerpt:'On a poussé la RTX 5090 dans ses retranchements : Cyberpunk 2077 4K, rendu Blender, températures. Le verdict.',author:'Kevin',authorInit:'K',date:'10 Jan 2025',readTime:'12 min',views:'8.7K',tags:['RTX 5090','Benchmark','NVIDIA','4K'],content:`<p>La GeForce RTX 5090 est arrivée dans notre labo avec une promesse folle : doubler les perfs de la RTX 4090.</p><div class="highlight">🎮 Cyberpunk 2077 4K Ultra RT : 94 FPS en moyenne avec DLSS Quality. La 4090 plafonnait à 52 FPS dans les mêmes conditions.</div><h3>Verdict</h3><p>La RTX 5090 est la meilleure carte graphique jamais produite. Son prix de 1 311 000 FCFA est justifié si tu joues en 4K.</p>`,related:[1,3,5]},
   {id:3,featured:false,cat:'guide',catLabel:'Guide',emoji:'🔧',title:'Monter son PC gaming en 2025 : le guide pas à pas pour débutants',excerpt:'Commande tes composants, prépare ton espace, suis nos étapes illustrées. Monter un PC, c\'est plus simple qu\'il n\'y paraît.',author:'Nathan',authorInit:'N',date:'5 Jan 2025',readTime:'15 min',views:'6.1K',tags:['Build PC','Guide','Débutant','Gaming'],content:`<p>Monter son propre PC gaming est l'une des meilleures décisions que tu puisses prendre.</p><h3>L'ordre de montage idéal</h3><p>1. Installer le CPU → 2. Fixer le ventirad → 3. Insérer la RAM → 4. Monter la CM dans le boîtier → 5. Brancher l'alim → 6. Installer les SSD M.2 → 7. Câbler → 8. GPU.</p><div class="highlight">⚠️ Ne force jamais ! Si un composant ne rentre pas facilement, quelque chose est mal aligné.</div>`,related:[1,4,6]},
   {id:4,featured:false,cat:'comparatif',catLabel:'Comparatif',emoji:'⚔️',title:'AMD Ryzen 9 9950X vs Intel Core Ultra 9 285K : qui domine en 2025 ?',excerpt:'Le duel des titans CPU. Perfs en gaming, en rendu, en multi-thread : on compare tout en détail.',author:'Marie',authorInit:'M',date:'28 Déc 2024',readTime:'10 min',views:'5.3K',tags:['CPU','AMD','Intel','Comparatif'],content:`<p>C'est le match que tout le monde attendait : AMD Ryzen 9 9950X face à l'Intel Core Ultra 9 285K.</p><div class="highlight">📊 Blender BMW render : Ryzen 9950X en 1m 12s, Core Ultra 9 285K en 1m 08s. Intel prend l'avantage.</div><h3>Verdict</h3><p>Pour le gaming seul → prends le moins cher. Pour la création → 285K en multi-thread pur, 9950X pour l'efficience énergétique.</p>`,related:[1,5,6]},
   {id:5,featured:false,cat:'actu',catLabel:'Actualité',emoji:'📰',title:'NVIDIA DLSS 4 : l\'upscaling change de dimension avec la Frame Generation multi-images',excerpt:'DLSS 4 peut générer jusqu\'à 3 images par image rendue. On a testé sur RTX 5080 — c\'est bluffant.',author:'Kevin',authorInit:'K',date:'20 Déc 2024',readTime:'6 min',views:'9.4K',tags:['DLSS 4','NVIDIA','RTX 5000','Technologie'],content:`<p>NVIDIA a frappé fort avec DLSS 4. La Multi Frame Generation peut générer jusqu'à 3 images intermédiaires par image rendue.</p><div class="highlight">🎮 Sur Cyberpunk 2077 4K Ultra, une RTX 5080 passe de 45 FPS natifs à 180 FPS avec DLSS 4 Quality + MFG x4.</div>`,related:[2,1,4]},
   {id:6,featured:false,cat:'conseil',catLabel:'Conseil',emoji:'❄️',title:'Watercooling AIO vs ventirad : que choisir pour ton build 2025 ?',excerpt:'Budget, performances, bruit, fiabilité. On compare les meilleurs systèmes de refroidissement du marché.',author:'Marie',authorInit:'M',date:'12 Déc 2024',readTime:'7 min',views:'3.8K',tags:['Refroidissement','AIO','Ventirad','Build'],content:`<p>Le choix du système de refroidissement est souvent sous-estimé.</p><div class="highlight">🏆 Le Noctua NH-D15 G2 reste le roi de l'air cooling en 2025. Il bat des AIO 240mm en perfs thermiques.</div><h3>Que choisir ?</h3><ul><li><strong>CPU 65-125W</strong> → ventirad 120-140mm suffit</li><li><strong>CPU 125-170W</strong> → AIO 240/280mm ou bon dual-tower</li><li><strong>CPU > 200W ou OC intensif</strong> → AIO 360mm ou NH-D15 G2</li></ul>`,related:[3,4,1]},
-  {id:7,featured:false,cat:'actu',catLabel:'Actualité',emoji:'🚀',title:'AMD RX 9070 XT : la meilleure GPU milieu de gamme de 2025 ?',excerpt:'À 699€, la RX 9070 XT chamboule le marché GPU. On compare ses perfs aux RTX 4070 Super et 4080 Super.',author:'Nathan',authorInit:'N',date:'8 Déc 2024',readTime:'9 min',views:'7.2K',tags:['AMD','RX 9070 XT','GPU','Comparatif'],content:`<p>AMD a frappé un grand coup avec la Radeon RX 9070 XT. À 699€, elle égale la RTX 4080 Super en rasterisation.</p><div class="highlight">📊 Forza Horizon 5 4K Ultra : RX 9070 XT → 87 FPS / RTX 4080 Super → 84 FPS.</div>`,related:[1,2,4]},
-  {id:8,featured:false,cat:'conseil',catLabel:'Conseil',emoji:'💰',title:'Meilleure config PC gaming à 1000€ en 2025 : notre sélection experte',excerpt:'On a composé la build idéale pour 1000€ : processeur, GPU, RAM, SSD, boîtier. Sans compromis inutiles.',author:'Kevin',authorInit:'K',date:'1 Déc 2024',readTime:'11 min',views:'11.2K',tags:['Budget','Build PC','Config','Gaming'],content:`<p>1000€ pour un PC gaming complet en 2025, c'est un budget serré mais réaliste pour une machine capable de tourner tous les jeux en 1440p Ultra.</p><ul><li>🖥️ <strong>CPU</strong> : AMD Ryzen 7 9700X (329€)</li><li>🎮 <strong>GPU</strong> : RTX 4070 Super 12GB (569€)</li><li>🧠 <strong>RAM</strong> : Kingston Fury Beast DDR5 32Go (79€)</li><li>💾 <strong>SSD</strong> : Samsung 990 Pro 1To (89€)</li></ul><div class="highlight">💡 Avec les promos et cashback, cette config passe facilement sous les 1200€.</div>`,related:[3,1,6]}
+  {id:7,featured:false,cat:'actu',catLabel:'Actualité',emoji:'🚀',title:'AMD RX 9070 XT : la meilleure GPU milieu de gamme de 2025 ?',excerpt:'À 459 000 FCFA, la RX 9070 XT chamboule le marché GPU. On compare ses perfs aux RTX 4070 Super et 4080 Super.',author:'Nathan',authorInit:'N',date:'8 Déc 2024',readTime:'9 min',views:'7.2K',tags:['AMD','RX 9070 XT','GPU','Comparatif'],content:`<p>AMD a frappé un grand coup avec la Radeon RX 9070 XT. À 459 000 FCFA, elle égale la RTX 4080 Super en rasterisation.</p><div class="highlight">📊 Forza Horizon 5 4K Ultra : RX 9070 XT → 87 FPS / RTX 4080 Super → 84 FPS.</div>`,related:[1,2,4]},
+  {id:8,featured:false,cat:'conseil',catLabel:'Conseil',emoji:'💰',title:'Meilleure config PC gaming à 650 000 FCFA en 2025 : notre sélection experte',excerpt:'On a composé la build idéale pour 650 000 FCFA : processeur, GPU, RAM, SSD, boîtier. Sans compromis inutiles.',author:'Kevin',authorInit:'K',date:'1 Déc 2024',readTime:'11 min',views:'11.2K',tags:['Budget','Build PC','Config','Gaming'],content:`<p>650 000 FCFA pour un PC gaming complet en 2025, c'est un budget serré mais réaliste pour une machine capable de tourner tous les jeux en 1440p Ultra.</p><ul><li>🖥️ <strong>CPU</strong> : AMD Ryzen 7 9700X (216 000 FCFA)</li><li>🎮 <strong>GPU</strong> : RTX 4070 Super 12GB (373 000 FCFA)</li><li>🧠 <strong>RAM</strong> : Kingston Fury Beast DDR5 32Go (52 000 FCFA)</li><li>💾 <strong>SSD</strong> : Samsung 990 Pro 1To (65 000 FCFA)</li></ul><div class="highlight">💡 Avec les promos disponibles sur GabHardware, cette config est encore plus accessible !</div>`,related:[3,1,6]}
 ];
 
 let currentBlogFilter='all';
@@ -1218,7 +1322,8 @@ function closeArticleModal(){document.getElementById('articleModal').classList.r
 const obs=new IntersectionObserver(entries=>entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*80);}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Init
+// ===== INIT =====
+loadCart();    // ← Charger le panier depuis localStorage au démarrage
 renderHome();
 renderCart();
 renderCatalog();
